@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/cadastros', function () {
+    return view('registercar');
+});
+
+Route::post('/cadastros', 'CarController@saveCar');
